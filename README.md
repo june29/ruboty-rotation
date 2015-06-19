@@ -36,3 +36,14 @@ three
 > @ruboty rotation current
 one
 ```
+
+## ENV
+
+```
+# With ENV options:
+#   ROTATION_CURRENT_PREFIX='Current item is '
+#   ROTATION_CURRENT_SUFFIX='. Please check it!'
+
+> @ruboty rotation current
+Current item is one. Please check it!
+```

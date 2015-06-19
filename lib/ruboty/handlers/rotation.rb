@@ -3,6 +3,9 @@ module Ruboty
     class Rotation < Base
       NAMESPACE = "rotation"
 
+      env :ROTATION_CURRENT_PREFIX, "Prefix of 'Show current' message", optional: true
+      env :ROTATION_CURRENT_SUFFIX, "SUffix of 'Show current' message", optional: true
+
       on(/rotation items add (?<item>.+)/, name: "add_item", description: "Add item")
       on(/rotation items delete (?<item>.+)/, name: "delete_item", description: "Delete item")
       on(/rotation items\z/, name: "list_items",  description: "List items")
